@@ -1,55 +1,4 @@
 ## 📁 Repository Contents
-
-- `smeta_dumbbell.py` → Main simulation code  
-- `README.md` → Documentation  
-
----
-
-## 👨‍⚕️ Author
-
-**Dr. Rajatsubhra Mukhopadhyay**  
-Pediatrician | Independent Researcher  
-Director, Child Health Care Arambag  
-
-ORCID: https://orcid.org/0000-0001-5658-8016  
-
----
-
-## ⚠️ Usage Note
-
-This work represents an original conceptual and computational framework.  
-Reproduction, modification, or redistribution should be done with proper attribution.
-## 🔗 Related Work (SMETA Framework)
-
-This simulation is part of an ongoing research development of the SMETA framework.
-
-### Foundational Works
-
-1. **SMETA Framework — Version 1.0**  
-   Published: 28 January 2026  
-   DOI: https://doi.org/10.5281/zenodo.18396901  
-
-2. **Integrated Axiomatic Consolidation (Version 1.1)**  
-   Published: 4 February 2026  
-   DOI: https://doi.org/10.5281/zenodo.18490160  
-
-3. **SMETA Pamphlet**  
-   DOI: https://doi.org/10.5281/zenodo.18979029  
-
----
-
-These works establish the theoretical foundation of the SMETA model, while the present repository provides a computational realization of the dual Ātman dynamics.
-
----
-
-## 🔬 Future Directions
-
-- Quantitative validation of phase transitions  
-- Analytical formulation of Ātman interaction fields  
-- Experimental parameter mapping  
-- Integration with SMETA master equation
-
-
 # SMETA Dumbbell Simulation
 
 A computational visualization of the **SMETA framework**  
@@ -124,3 +73,53 @@ Global system phase is defined by **dominant population state**.
 ```bash
 pip install numpy matplotlib
 python smeta_dumbbell.py
+
+
+- `smeta_dumbbell.py` → Main simulation code  
+- `README.md` → Documentation  
+
+---
+
+## 👨‍⚕️ Author
+
+**Dr. Rajatsubhra Mukhopadhyay**  
+Pediatrician | Independent Researcher  
+Director, Child Health Care Arambag  
+
+ORCID: https://orcid.org/0000-0001-5658-8016  
+
+---
+
+## ⚠️ Usage Note
+
+This work represents an original conceptual and computational framework.  
+Reproduction, modification, or redistribution should be done with proper attribution.
+## 🔗 Related Work (SMETA Framework)
+
+This simulation is part of an ongoing research development of the SMETA framework.
+
+### Foundational Works
+
+1. **SMETA Framework — Version 1.0**  
+   Published: 28 January 2026  
+   DOI: https://doi.org/10.5281/zenodo.18396901  
+
+2. **Integrated Axiomatic Consolidation (Version 1.1)**  
+   Published: 4 February 2026  
+   DOI: https://doi.org/10.5281/zenodo.18490160  
+
+3. **SMETA Pamphlet**  
+   DOI: https://doi.org/10.5281/zenodo.18979029  
+
+---
+
+These works establish the theoretical foundation of the SMETA model, while the present repository provides a computational realization of the dual Ātman dynamics.
+
+---
+
+## 🔬 Future Directions
+
+- Quantitative validation of phase transitions  
+- Analytical formulation of Ātman interaction fields  
+- Experimental parameter mapping  
+- Integration with SMETA master equation
