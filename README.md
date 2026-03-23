@@ -1,35 +1,105 @@
-# smeta-dumbbell-simulation
-SMETA-based particle simulation using dual Ātman model (Interactive &amp; Memory) visualized as dumbbell dynamics with phase transitions (Creation–Stable–Dissolution–Rebinding).
+## 📁 Repository Contents
+
+- `smeta_dumbbell.py` → Main simulation code  
+- `README.md` → Documentation  
+
+---
+
+## 👨‍⚕️ Author
+
+**Dr. Rajatsubhra Mukhopadhyay**  
+Pediatrician | Independent Researcher  
+Director, Child Health Care Arambag  
+
+ORCID: https://orcid.org/0000-0001-5658-8016  
+
+---
+
+## ⚠️ Usage Note
+
+This work represents an original conceptual and computational framework.  
+Reproduction, modification, or redistribution should be done with proper attribution.
+
+---
+
+## 🔬 Future Directions
+
+- Quantitative validation of phase transitions  
+- Analytical formulation of Ātman interaction fields  
+- Experimental parameter mapping  
+- Integration with SMETA master equation
+
+
 # SMETA Dumbbell Simulation
 
-This repository presents a computational model inspired by the SMETA framework (Space–Mass–Energy–Time–Ātman).
+A computational visualization of the **SMETA framework**  
+(Space–Mass–Energy–Time–Ātman) using a dual-component particle model.
 
-## Core Concept
+---
 
-Each particle is modeled as a **dual-component system (Ātman)**:
+## 🧠 Conceptual Model
 
-- 🔵 Interactive component (Atman A) → represented by blue node  
-- 🟡 Memory component (Atman B) → represented by yellow node  
+Each particle is represented as a **dual Ātman system**:
 
-These form a **dynamic dumbbell structure**.
+- 🔵 **Ātman A (Interactive / Pulse)**  
+  - Drives interaction, motion, attraction–repulsion  
+  - Represented as the **blue node**  
+  - Dominant during dynamic and peripheral activity  
 
-## Phenomena Demonstrated
+- 🟡 **Ātman B (Memory / Informational)**  
+  - Stores accumulated interaction history  
+  - Represented as the **yellow node**  
+  - Regulates stabilization and re-formation  
+
+These two components form a **dumbbell structure**, dynamically evolving over time.
+
+---
+
+## 🔄 Emergent Behaviour
+
+The simulation demonstrates:
 
 - Interaction-driven memory formation  
-- Dissolution of interaction component  
-- Free-memory phase  
-- Rebinding cycle  
-- Coexistence of multiple states in same field  
+- Memory saturation and decay  
+- Dissolution of the interactive component  
+- Free-memory phase (yellow-only state)  
+- Rebinding of interaction to memory  
+- Coexistence of multiple phase states in a single field  
 
-## Phases
+---
 
-- ACTIVE  
-- STEADY  
-- DISSOLVING  
-- FREE-YELLOW  
-- REBINDING  
+## 📊 Phase Structure
 
-## Run
+Each particle independently evolves through:
+
+1. **ACTIVE** → Interaction-dominated phase  
+2. **STEADY** → Memory-stabilized equilibrium  
+3. **DISSOLVING** → Interaction fading  
+4. **FREE-YELLOW** → Memory-only persistence  
+5. **REBINDING** → Reformation of interaction  
+
+Global system phase is defined by **dominant population state**.
+
+---
+
+## ⚙️ Model Features
+
+- Nonlinear interaction field (attraction + repulsion)  
+- Memory evolution with saturation:
+  
+  \[
+  \frac{dB}{dt} = \alpha I (1 - \frac{B}{B_{\max}}) - \lambda B
+  \]
+
+- Feedback:
+  
+  Interaction → Memory → Future interaction
+
+- Asynchronous phase cycles across particles  
+
+---
+
+## ▶️ How to Run
 
 ```bash
 pip install numpy matplotlib
