@@ -154,11 +154,14 @@ You can run this simulation directly using the Pydroid 3 app on Android.
 3. Install required dependencies
 4. Run the script
 
+
 ### Install dependencies
 
 ```bash
 pip install numpy matplotlib
 
+
 Run simulation
+
 python smeta_dumbbell.py
 
