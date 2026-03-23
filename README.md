@@ -120,6 +120,8 @@ pip install numpy matplotlib
 
 python smeta_dumbbell.py
 
+--
+
 ## Related Work
 
 This repository is part of the SMETA framework development.
