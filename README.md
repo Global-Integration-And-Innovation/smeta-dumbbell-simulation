@@ -104,24 +104,6 @@ The global system phase is determined by the dominant population state.
 
 ---
 
-## Repository Contents
-
-- `smeta_dumbbell.py` — simulation code  
-- `README.md` — documentation  
-
----
-
-## Usage
-
-Install required dependencies:
-
-```bash
-pip install numpy matplotlib
-
-python smeta_dumbbell.py
-
---
-
 ## Related Work
 
 This repository is part of the SMETA framework development.
@@ -154,3 +136,20 @@ If this work is used or referenced, please cite the associated SMETA publication
 
 All rights reserved by the author.
 Reuse is permitted only with proper attribution.
+
+## Repository Contents
+
+- `smeta_dumbbell.py` — simulation code  
+- `README.md` — documentation  
+
+---
+
+## Usage
+
+Install required dependencies:
+
+```bash
+pip install numpy matplotlib
+
+python smeta_dumbbell.py
+
