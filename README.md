@@ -1,125 +1,154 @@
-## 📁 Repository Contents
 # SMETA Dumbbell Simulation
 
-A computational visualization of the **SMETA framework**  
-(Space–Mass–Energy–Time–Ātman) using a dual-component particle model.
+Author
+Dr. Rajatsubhra Mukhopadhyay
+Pediatrician | Independent Researcher
+Director, Child Health Care Arambag
+ORCID: https://orcid.org/0000-0001-5658-8016⁠�
+
+## Abstract
+
+This repository presents a computational implementation of the SMETA framework  
+(Space–Mass–Energy–Time–Ātman) using a dual-component particle model.  
+Each particle is represented as a coupled system consisting of an interactive component and a memory component. The model demonstrates how interaction-driven dynamics generate memory, and how accumulated memory subsequently regulates future interaction, resulting in emergent phase behaviour.
 
 ---
 
-## 🧠 Conceptual Model
+## Conceptual Model
 
-Each particle is represented as a **dual Ātman system**:
+Each particle is defined as a dual-component system:
 
-- 🔵 **Ātman A (Interactive / Pulse)**  
-  - Drives interaction, motion, attraction–repulsion  
-  - Represented as the **blue node**  
-  - Dominant during dynamic and peripheral activity  
+- **Ātman A (Interactive Component)**  
+  Governs instantaneous interaction, motion, and attraction–repulsion dynamics.
 
-- 🟡 **Ātman B (Memory / Informational)**  
-  - Stores accumulated interaction history  
-  - Represented as the **yellow node**  
-  - Regulates stabilization and re-formation  
+- **Ātman B (Memory Component)**  
+  Stores accumulated interaction history and modulates future evolution.
 
-These two components form a **dumbbell structure**, dynamically evolving over time.
+The system can be interpreted as a coupled interaction–memory framework:
+
+\[
+\mathcal{A} = (\mathcal{A}_A, \mathcal{A}_B)
+\]
+
+where interaction generates memory and memory feeds back into interaction.
 
 ---
 
-## 🔄 Emergent Behaviour
+## Mathematical Formulation
 
-The simulation demonstrates:
+### Memory Evolution
+
+\[
+\frac{dB}{dt} = \alpha I(t)\left(1 - \frac{B}{B_{\max}}\right) - \lambda B
+\]
+
+where:
+
+- \( B \) : memory state  
+- \( I(t) \) : interaction input  
+- \( \alpha \) : memory formation coefficient  
+- \( \lambda \) : decay constant  
+- \( B_{\max} \) : saturation limit  
+
+### Interaction–Memory Feedback
+
+\[
+I(t) = I_0(t) + \beta B
+\]
+
+This defines a closed feedback system:
+
+\[
+\text{Interaction} \rightarrow \text{Memory} \rightarrow \text{Modified Interaction}
+\]
+
+---
+
+## Computational Implementation
+
+The model is implemented using a particle-based simulation with:
+
+- Nonlinear interaction field (attraction–repulsion balance)
+- Memory accumulation with saturation and decay
+- Time-dependent feedback from memory to interaction
+- Asynchronous evolution across particles
+
+Each particle evolves independently while interacting within a shared field.
+
+---
+
+## Emergent Behaviour
+
+The simulation exhibits the following phenomena:
 
 - Interaction-driven memory formation  
-- Memory saturation and decay  
-- Dissolution of the interactive component  
-- Free-memory phase (yellow-only state)  
-- Rebinding of interaction to memory  
-- Coexistence of multiple phase states in a single field  
+- Memory saturation and gradual decay  
+- Reduction of interaction intensity  
+- Persistence of memory-dominated states  
+- Re-emergence of interaction from stored memory  
+- Coexistence of multiple dynamical phases  
 
 ---
 
-## 📊 Phase Structure
+## Phase Structure
 
-Each particle independently evolves through:
+Each particle transitions through the following states:
 
-1. **ACTIVE** → Interaction-dominated phase  
-2. **STEADY** → Memory-stabilized equilibrium  
-3. **DISSOLVING** → Interaction fading  
-4. **FREE-YELLOW** → Memory-only persistence  
-5. **REBINDING** → Reformation of interaction  
+1. **ACTIVE** — interaction-dominated regime  
+2. **STEADY** — stabilized memory–interaction balance  
+3. **DISSOLVING** — decreasing interaction influence  
+4. **MEMORY-DOMINANT** — persistence of memory without active interaction  
+5. **REBINDING** — reactivation of interaction from memory  
 
-Global system phase is defined by **dominant population state**.
-
----
-
-## ⚙️ Model Features
-
-- Nonlinear interaction field (attraction + repulsion)  
-- Memory evolution with saturation:
-  
-  \[
-  \frac{dB}{dt} = \alpha I (1 - \frac{B}{B_{\max}}) - \lambda B
-  \]
-
-- Feedback:
-  
-  Interaction → Memory → Future interaction
-
-- Asynchronous phase cycles across particles  
+The global system phase is determined by the dominant population state.
 
 ---
 
-## ▶️ How to Run
+## Repository Contents
+
+- `smeta_dumbbell.py` — simulation code  
+- `README.md` — documentation  
+
+---
+
+## Usage
+
+Install required dependencies:
 
 ```bash
 pip install numpy matplotlib
+
 python smeta_dumbbell.py
 
+## Related Work
 
-- `smeta_dumbbell.py` → Main simulation code  
-- `README.md` → Documentation  
+This repository is part of the SMETA framework development.
+SMETA Framework — Version 1.0
+DOI: https://doi.org/10.5281/zenodo.18396901⁠�
+Integrated Axiomatic Consolidation (Version 1.1)
+DOI: https://doi.org/10.5281/zenodo.18490160⁠�
+SMETA Pamphlet
+DOI: https://doi.org/10.5281/zenodo.18979029⁠�
 
----
+These works establish the theoretical foundation of the model.
+Scope and Limitations
+This work represents a conceptual and computational framework.
+The model is not yet experimentally validated.
+Parameters are phenomenological and require calibration against measurable systems.
 
-## 👨‍⚕️ Author
+##Future Work
 
-**Dr. Rajatsubhra Mukhopadhyay**  
-Pediatrician | Independent Researcher  
-Director, Child Health Care Arambag  
+Analytical derivation of interaction fields
+Quantitative phase transition analysis
+Parameter estimation from physical or biological systems
+Integration with the SMETA master equation
+Development of experimentally testable predictions
 
-ORCID: https://orcid.org/0000-0001-5658-8016  
+## Citation
 
----
+If this work is used or referenced, please cite the associated SMETA publications listed above.
 
-## ⚠️ Usage Note
+## License
 
-This work represents an original conceptual and computational framework.  
-Reproduction, modification, or redistribution should be done with proper attribution.
-## 🔗 Related Work (SMETA Framework)
-
-This simulation is part of an ongoing research development of the SMETA framework.
-
-### Foundational Works
-
-1. **SMETA Framework — Version 1.0**  
-   Published: 28 January 2026  
-   DOI: https://doi.org/10.5281/zenodo.18396901  
-
-2. **Integrated Axiomatic Consolidation (Version 1.1)**  
-   Published: 4 February 2026  
-   DOI: https://doi.org/10.5281/zenodo.18490160  
-
-3. **SMETA Pamphlet**  
-   DOI: https://doi.org/10.5281/zenodo.18979029  
-
----
-
-These works establish the theoretical foundation of the SMETA model, while the present repository provides a computational realization of the dual Ātman dynamics.
-
----
-
-## 🔬 Future Directions
-
-- Quantitative validation of phase transitions  
-- Analytical formulation of Ātman interaction fields  
-- Experimental parameter mapping  
-- Integration with SMETA master equation
+All rights reserved by the author.
+Reuse is permitted only with proper attribution.
