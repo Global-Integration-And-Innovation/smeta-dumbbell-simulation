@@ -139,17 +139,26 @@ Reuse is permitted only with proper attribution.
 
 ## Repository Contents
 
-- `smeta_dumbbell.py` — simulation code  
-- `README.md` — documentation  
-
+- [smeta_dumbbell.py](./smeta_dumbbell.py) — simulation code
+- [README.md](./README.md) — documentation
 ---
 
 ## Usage
 
-Install required dependencies:
+### Run in Pydroid 3
+
+You can run this simulation directly using the Pydroid 3 app on Android.
+
+1. Copy the file `smeta_dumbbell.py`
+2. Paste it into Pydroid
+3. Install required dependencies
+4. Run the script
+
+### Install dependencies
 
 ```bash
 pip install numpy matplotlib
 
+Run simulation
 python smeta_dumbbell.py
 
